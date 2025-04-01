@@ -1,17 +1,21 @@
-<mark> This is a fork of [dtinth](https://github.com/dtinth/)'s [comic-mono](https://github.com/dtinth/comic-mono-font/)</mark>
+# Comic Mono NerdFont Adjusted
+<mark> This is a fork of [my fork](https://github.com/luan-bravo/comic-mono_vertical-adjusted) of [dtinth](https://github.com/dtinth/)'s [comic-mono](https://github.com/dtinth/comic-mono-font/)</mark>
+I do not know how to make or modify fonts, so this was all done after much trial and error.
 
-I do not know how to make and modify fonts, so this was all done with trial and error through FontForge
 ## Changes from Comic Mono
- - General Ascent to 1920 and Descent to 128
- - Use the generated Ascent values win, typo and HHead Ascent to set each Descent to 10% of their respective Ascent.
+ - General Ascent to 1920 and Descent to 128;
+ - Use the generated Ascent values win, typo and HHead Ascent to set each Descent to 10% of their respective Ascent;
+ - [X] Run in through [NerdFont patcher](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-patcher) with the `--complete` option;
+     - Also add the `--mono` variations where special NerdFont characters are one character wide.
 
-### To-do
- - [ ] Run in through [NerdFont patcher]() with the `--complete` option;
+## To-do
  - [ ] Better align special characters (like: `=`, `*`, `+`);
  - [ ] Add (at least latin) languages accents (i.e.: `á`, `ç`, `ê`);
- - [ ] Add Ligatures that are actually Comic;
+ - [ ] Add Ligatures that are actually Comic.
 
-# Comic Mono
+
+
+## Comic Mono
 A legible monospace font... the very typeface you’ve been trained to recognize since childhood. This font is a fork of [Shannon Miwa](https://github.com/shannpersand)’s [Comic Shanns](https://github.com/shannpersand/comic-shanns) (version 1).
 
 <p class="website-hidden">
