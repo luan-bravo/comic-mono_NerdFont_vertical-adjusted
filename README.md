@@ -2,15 +2,30 @@
 <mark> This is a fork of [my fork](https://github.com/luan-bravo/comic-mono_vertical-adjusted) of [dtinth](https://github.com/dtinth/)'s [comic-mono](https://github.com/dtinth/comic-mono-font/)</mark>
 I do not know how to make or modify fonts, so this was all done after much trial and error.
 
-## Changes from Comic Mono
- - General Ascent to 1920 and Descent to 128;
- - Use the generated Ascent values win, typo and HHead Ascent to set each Descent to 10% of their respective Ascent;
- - [X] Run in through [NerdFont patcher](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-patcher) with the `--complete` option;
-     - Also add the `--mono` variations where special NerdFont characters are one character wide.
+## Change log from Comic Mono
+ - [58e6093]() - Nerd the comic:
+     - Set general values:
+         - EM size to 4096;
+         - Ascent to 3276;
+         - Descent to 820;
+         - Underline position to -256
+     - Use the Win, Typo and HHead Ascents values generated on general size settings change to set each Descent to 10% of their respective Ascent to (attempt to) center characters vertically;
+     - Set Typo and HHead line Gap to 50% of the general EM size to create vertical padding;
+         - Patch fonts with [NerdFont patcher](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-patcher) with the `--complete` option;
+         - Also add the `--mono` variations, where special NerdFont characters are only one character wide.
+ - [054aff8]() - to regular non-mono: Add Portuguese accents (and some others) | Center '-, +, \*, =, ~, <, >' characters:
+     - Make comb accents based on existing ones:
+        - grave: grave & accute;
+        - tilde: tilde & cedilla (with some editing)
+        - colon: umlaut (a.k.a. Portuguese's retired trema);
+        - underscore: macron (scaled to 85%).
+     - Make undoted 'i' and 'j';
+     - Overwrite and lose the std file and the created anchors (*sight*).
 
 ## To-do
- - [ ] Better align special characters (like: `=`, `*`, `+`);
- - [ ] Add (at least latin) languages accents (i.e.: `á`, `ç`, `ê`);
+ - [X] Run in through [NerdFont patcher](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#font-patcher) with the `--complete` option;
+ - [X] Better align special characters (like: `=`, `*`, `+`);
+ - [X] Add (at least latin) languages accents (i.e.: `á`, `ç`, `ê`);
  - [ ] Add Ligatures that are actually Comic.
 
 
